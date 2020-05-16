@@ -105,6 +105,12 @@ header h1 img {
   width: 80px;
 }
 
+header .menu-toggle {
+  position: fixed;
+  left: 30px;
+  top: 30px;
+}
+
 .menu {
   position: fixed;
   top: 0;
@@ -114,12 +120,6 @@ header h1 img {
   height: 100%;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-}
-
-.menu .menu-toggle {
-  position: fixed;
-  left: 30px;
-  top: 30px;
 }
 
 .menu nav {
@@ -159,6 +159,20 @@ section {
   max-width: 360px;
 }
 
+.natural:hover img {
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.natural:hover h2 {
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  -webkit-transform: scale(1.1) translateY(-20px);
+          transform: scale(1.1) translateY(-20px);
+}
+
 .one-thing {
   position: relative;
   padding-left: 360px;
@@ -185,6 +199,20 @@ section {
   font-weight: 200;
 }
 
+.one-thing:hover img {
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.one-thing:hover h3, .one-thing:hover p {
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  -webkit-transform: scale(0.8) translateY(-20px);
+          transform: scale(0.8) translateY(-20px);
+}
+
 .lookbook {
   padding: 220px 0 180px;
   background: url("/assets/image_3.jpg") no-repeat 50% 50%;
@@ -195,5 +223,12 @@ section {
   text-align: center;
   color: white;
   font-size: 6.4em;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.lookbook:hover h2 {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 /*# sourceMappingURL=style.css.map */
