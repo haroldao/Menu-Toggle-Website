@@ -13,11 +13,11 @@ html, body {
 }
 
 ::-moz-selection {
-  background-color: #eeac25;
+  background-color: grey;
 }
 
 ::selection {
-  background-color: #eeac25;
+  background-color: grey;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -36,7 +36,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -92,6 +91,7 @@ body {
   max-width: 960px;
   padding: 0 50px;
   margin: 0 auto;
+  font-size: 62.5%;
 }
 
 header {
@@ -133,5 +133,22 @@ header h1 img {
   font-weight: 700;
   margin-bottom: 10px;
   display: block;
+}
+
+.natural {
+  padding-right: 260px;
+  position: relative;
+}
+
+.natural h2 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 6.4em;
+  line-height: 1.125;
+  font-weight: 700;
+  max-width: 360px;
 }
 /*# sourceMappingURL=style.css.map */
