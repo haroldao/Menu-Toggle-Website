@@ -1,9 +1,13 @@
 @import "_base.scss";
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
+
+
 body{
     max-width: 960px;
-    padding: 0 50px;
+    padding: 0 20px;
     margin: 0 auto;
     font-size: 62.5%;
+    font-family: 'Biryani', sans-serif;
 }
 header{
     text-align: center;
@@ -41,11 +45,15 @@ header{
             font-weight: 700;
             margin-bottom: 10px;
             display: block;
+            text-transform: capitalize;
 
         }
     }
 }
 
+section{
+    margin-bottom: 60px;
+}
 .natural{
     padding-right: 260px;
     position: relative;
@@ -59,4 +67,41 @@ header{
         font-weight: 700;
         max-width: 360px;
     }
+}
+
+.one-thing{
+    position: relative;
+    padding-left: 360px;
+    div{
+        position: absolute;
+        transform: translateY(-50%);
+        left: 0;
+        top: 50%;
+        max-width: 360px;
+        h3{
+            font-size: 3.2em;
+            line-height: 1.125;
+            font-weight: 700;
+        }
+    
+        p{
+            margin-top: 20px;
+            font-size: 3.2em;
+            font-weight: 200;
+        }
+    }
+    
+}
+
+.lookbook{
+    padding: 220px 0 180px;
+    background: url("/assets/image_3.jpg") no-repeat 50% 50%;
+    background-size: cover;
+
+    h2{
+        text-align: center;
+        color: white;
+        font-size: 6.4em;
+    }
+
 }
