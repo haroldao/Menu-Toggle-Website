@@ -1,2 +1,46 @@
 @import "_base.scss";
+body{
+    max-width: 960px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+    padding: 60px 20px;
+    h1{
+        img{
+            width: 80px;
+        }
+    }
+}
 
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 500px;
+    background-color: grey;
+    height: 100%;
+    transform: translateX(-100%);
+
+    .menu-toggle{
+        position: fixed;
+        left: 30px;
+        top:30px;
+    }
+
+    nav{
+        // opacity: 0;
+        padding: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        a{
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: block;
+
+        }
+    }
+}
