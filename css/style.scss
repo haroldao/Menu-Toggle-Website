@@ -18,6 +18,7 @@ header{
         }
     }
     .menu-toggle{
+        z-index: 5 ;
         position: fixed;
         left: 30px;
         top:30px;
@@ -27,10 +28,11 @@ header{
 
 .menu{
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 500px;
-    background-color: grey;
+    background-color: rgb(241, 241, 241);
     height: 100%;
     transform: translateX(-100%);
     transition: ease all .7s;
@@ -47,9 +49,18 @@ header{
             font-weight: 700;
             margin-bottom: 10px;
             display: block;
+            color:black;
             text-transform: capitalize;
+            &:hover{
+                transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+                transform: translateX(25px);
+            }
 
         }
+    }
+
+    &.open{
+        transform: translateX(0);
     }
 }
 
