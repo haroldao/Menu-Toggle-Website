@@ -120,6 +120,8 @@ header .menu-toggle {
   height: 100%;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  -webkit-transition: ease all .7s;
+  transition: ease all .7s;
 }
 
 .menu nav {
