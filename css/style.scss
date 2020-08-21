@@ -2,31 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
 
 
-body{
+body {
     max-width: 960px;
     padding: 0 20px;
     margin: 0 auto;
     font-size: 62.5%;
     font-family: 'Biryani', sans-serif;
 }
-header{
+
+header {
     text-align: center;
     padding: 60px 20px;
-    h1{
-        img{
+
+    h1 {
+        img {
             width: 80px;
         }
     }
-    .menu-toggle{
-        z-index: 5 ;
+
+    .menu-toggle {
+        z-index: 5;
         position: fixed;
         left: 30px;
-        top:30px;
+        top: 30px;
     }
 
 }
 
-.menu{
+.menu {
     position: fixed;
     z-index: 2;
     top: 0;
@@ -37,21 +40,23 @@ header{
     transform: translateX(-100%);
     transition: ease all .7s;
 
-    
-    nav{
+
+    nav {
         // opacity: 0;
         padding: 20px;
         top: 50%;
         transform: translateY(-50%);
         position: absolute;
-        a{
+
+        a {
             font-size: 3.2rem;
             font-weight: 700;
             margin-bottom: 10px;
             display: block;
-            color:black;
+            color: black;
             text-transform: capitalize;
-            &:hover{
+
+            &:hover {
                 transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
                 transform: translateX(25px);
             }
@@ -59,18 +64,20 @@ header{
         }
     }
 
-    &.open{
+    &.open {
         transform: translateX(0);
     }
 }
 
-section{
+section {
     margin-bottom: 60px;
 }
-.natural{
+
+.natural {
     padding-right: 260px;
     position: relative;
-    h2{
+
+    h2 {
         position: absolute;
         right: 0;
         top: 50%;
@@ -80,67 +87,75 @@ section{
         font-weight: 700;
         max-width: 360px;
     }
-    &:hover img{
+
+    &:hover img {
         transition: all .2s ease-in;
 
         transform: rotate(-5deg);
     }
-    &:hover h2{
+
+    &:hover h2 {
         transition: all .2s ease-in;
 
         transform: scale(1.1) translateY(-20px);
     }
 }
 
-.one-thing{
+.one-thing {
     position: relative;
     padding-left: 360px;
-    div{
+
+    div {
         position: absolute;
         transform: translateY(-50%);
         left: 0;
         top: 50%;
         max-width: 360px;
-        h3{
+
+        h3 {
             font-size: 3.2em;
             line-height: 1.125;
             font-weight: 700;
         }
-    
-        p{
+
+        p {
             margin-top: 20px;
             font-size: 3.2em;
             font-weight: 200;
         }
     }
-    &:hover img{
+
+    &:hover img {
         transition: all .2s ease-in;
 
         transform: rotate(5deg);
     }
-    &:hover h3, &:hover p{
+
+    &:hover h3,
+    &:hover p {
         transition: all .2s ease-in;
 
         transform: scale(.8) translateY(-20px);
     }
-    
+
 }
 
-.lookbook{
+.lookbook {
     padding: 220px 0 180px;
     background: url("/assets/image_3.jpg") no-repeat 50% 50%;
     background-size: cover;
 
 
-    h2{
+    h2 {
         text-align: center;
         color: white;
         font-size: 6.4em;
         transition: all .2s ease-in;
-        
+
     }
-    &:hover h2 {
-        transform: scale(1.4);
-    }
+
+    // &:hover h2 {
+    //     transform: scale(1.4);
+    // }
 
 }
