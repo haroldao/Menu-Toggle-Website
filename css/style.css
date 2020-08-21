@@ -223,7 +223,8 @@ section {
           transform: rotate(5deg);
 }
 
-.one-thing:hover h3, .one-thing:hover p {
+.one-thing:hover h3,
+.one-thing:hover p {
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   -webkit-transform: scale(0.8) translateY(-20px);
@@ -242,10 +243,5 @@ section {
   font-size: 6.4em;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
-}
-
-.lookbook:hover h2 {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
 }
 /*# sourceMappingURL=style.css.map */
